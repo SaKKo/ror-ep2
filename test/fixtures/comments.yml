@@ -1,0 +1,28 @@
+# == Schema Information
+#
+# Table name: comments
+#
+#  id         :bigint           not null, primary key
+#  remarks    :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  article_id :bigint           not null
+#
+# Indexes
+#
+#  index_comments_on_article_id  (article_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (article_id => articles.id)
+#
+
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  remarks: MyText
+  article: one
+
+two:
+  remarks: MyText
+  article: two
